@@ -1,0 +1,33 @@
+body {
+	background: tomato;
+}
+.nav {
+	background: url("img/Banner Spring 2017.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background:rgba(0,0,0,0.4);
+	box-shadow: 5px 10px 8px black;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.nav-ul {
+	list-style: none;
+	background: transparent;
+	border: transparent;
+	width: 100%;
+	height: 120px;
+}
+
+.nav-link {
+	color: white;
+	text-shadow: black 2px 3px 3px;
+}
+
+.nav-item {
+	font-family: 'Julius Sans One' ;
+	font-weight: bolder;
+	font-size: 18px;
+	padding-top: 40px;
+
+}
+
