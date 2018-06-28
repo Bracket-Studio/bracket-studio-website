@@ -1,6 +1,8 @@
 # Bracket Studio Website
 
-##TODO
+## TODO
+
+
 1.) Nav-Bar
 
     - Should include:
@@ -27,5 +29,3 @@
     .Requst page for fans
     .Random video of the day
     .Clicking avatar heads says voiceline        # bracket-studio
-# bracket-studio-website
-# bracket-studio-website
