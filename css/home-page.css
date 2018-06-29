@@ -4,7 +4,6 @@ body, html {
 }
 
 a:hover {
-	align-content: center;
 	color: #fafafa;
 }
 
@@ -13,7 +12,7 @@ a:hover {
 }
 
 .nav {
-	overflow: hidden;
+
 	width: 102%;
 	background-size: auto;
 	background:rgba(0,0,0,0.3);
@@ -33,6 +32,7 @@ a:hover {
 	animation-duration: 1s;
 }
 .nav-ul {
+	padding: 0;
 	list-style: none;
 	background: transparent;
 	border: transparent;
@@ -44,12 +44,50 @@ a:hover {
 	text-shadow: black 2px 3px 3px;
 }
 .nav-item {
-
+	text-align: center;
 	font-family: 'Julius Sans One' ;
 	font-weight: bolder;
 	font-size: 18px;
 	padding-top: 69px;
+}
 
+.home {
+	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1000ms; /* Safari 4.0 - 8.0 */
+	animation-name: nav-animation;
+	animation-duration: 1000ms;
+}
+.store {
+	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1300ms; /* Safari 4.0 - 8.0 */
+	animation-name: nav-animation;
+	animation-duration: 1300ms;
+
+}
+.podcast {
+	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1600ms; /* Safari 4.0 - 8.0 */
+	animation-name: nav-animation;
+	animation-duration: 1600ms;
+
+}
+.patreon{
+	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1900ms; /* Safari 4.0 - 8.0 */
+	animation-name: nav-animation;
+	animation-duration: 1900ms;
+}
+.about{
+	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 2200ms; /* Safari 4.0 - 8.0 */
+	animation-name: nav-animation;
+	animation-duration: 2200ms;
+}
+.contact{
+	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 2500ms; /* Safari 4.0 - 8.0 */
+	animation-name: nav-animation;
+	animation-duration: 2500ms;
 }
 
 .content-main {
@@ -108,4 +146,40 @@ i:hover{
 		position: relative;
 		top: 5px;
 	}
+}
+@keyframes nav-animation {
+	from {
+		opacity: 0;
+		/*position: absolute;*/
+		/*top: 100px;*/
+
+	}
+	to {
+		opacity: 1;
+		/*position: relative;*/
+		/*top: 5px;*/
+	/*}*/
+	}
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	padding-bottom: 5px;
+	font-size: 15px;
+	padding-top: 10px;
+	display: none;
+	position: relative;
+	background: rgba(0,0,0,0.4);
+	min-width: 160px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	position: relative;
+	display: block;
 }
