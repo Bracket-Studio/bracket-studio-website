@@ -113,6 +113,9 @@ a:hover {
     background:rgba(40,40,40,0.2);
 }
 
+.fab{
+    color: #202125;
+}
 .social-media-links{
     padding-top: 10px;
 }
