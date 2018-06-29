@@ -1,6 +1,6 @@
 body, html {
 	margin-left: 0;
-	background: #202124;
+	background: #202125;
 }
 
 a:hover {
@@ -16,12 +16,13 @@ a:hover {
     height: 35px;
 }
 
-.nav {
+.navbar {
+    z-index: 10;
 	width: 100%;
 	background-size: auto;
-	background:rgba(0,0,0,0);
-	box-shadow: 0 8px 25px red;
-    border-top: 1px solid white;
+	background:rgba(20,21,24,.2);
+	/*box-shadow: 0 8px 25px red;*/
+    /*border-top: 1px solid white;*/
 	border-bottom: 3px solid white;
 }
 .nav-logo {
@@ -36,7 +37,7 @@ a:hover {
 	animation-name: logo-animation;
 	animation-duration: 1s;
 }
-.nav-ul {
+.nav {
     text-align: center;
 	padding: 0;
 	list-style: none;
@@ -100,17 +101,20 @@ a:hover {
 }
 
 .content-main {
-    background:rgba(0,0,0,0.2);
+    background:rgba(40,40,40,0.2);
     /*border-left: 1px solid grey ;*/
     /*border-right: 1px solid grey ;*/
 }
-
 .container-main{
-    height: 650px;
+    height: 850px;
 	width: 100%;
 }
 .side-panel{
-    background:rgba(0,0,0,0.5);
+    background:rgba(40,40,40,0.2);
+}
+
+.social-media-links{
+    padding-top: 10px;
 }
 
 .avatar-list {
@@ -146,7 +150,7 @@ a:hover {
 
 .parallax {
     /* The image used */
-    background: url("../img/parallax/bs-youtube-function.jpg");
+    /*background: url("../img/parallax/bs-youtube-function.jpg");*/
 
     /* Set a specific height */
     min-height: 100%;
@@ -207,3 +211,5 @@ i:hover{
 	}
 }
 
+
+/*TESTING TESTING TESTING*/
