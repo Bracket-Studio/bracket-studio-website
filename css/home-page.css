@@ -183,3 +183,17 @@ i:hover{
 	position: relative;
 	display: block;
 }
+
+.parallax {
+	/* The image used */
+	background-image: url("../img/paralax/bs-youtube-function.jpg");
+
+	/* Set a specific height */
+	min-height: 500px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
