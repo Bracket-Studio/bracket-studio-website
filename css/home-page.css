@@ -16,7 +16,6 @@ a:hover {
 }
 
 .nav {
-
 	width: 100%;
 	background-size: auto;
 	background:rgba(0,0,0,0);
@@ -25,9 +24,9 @@ a:hover {
 	border-bottom: 3px solid white;
 }
 .nav-logo {
+    align-content: center;
 	position: relative;
 	top: 5px;
-	padding: 0 0 0 50px ;
 	margin: 0;
 	height: 120px;
 	-webkit-animation-name: logo-animation; /* Safari 4.0 - 8.0 */
@@ -36,6 +35,7 @@ a:hover {
 	animation-duration: 1s;
 }
 .nav-ul {
+    text-align: center;
 	padding: 0;
 	list-style: none;
 	background: transparent;
@@ -49,6 +49,7 @@ a:hover {
 	text-shadow: black 4px 5px 3px;
 }
 .nav-item {
+    position: relative;
 	text-align: center;
 	font-family: 'Julius Sans One' ;
 	font-weight: bolder;
@@ -56,49 +57,50 @@ a:hover {
 	padding-top: 45px;
 }
 
-.home {
+.discord {
 	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 1000ms; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 2200ms; /* Safari 4.0 - 8.0 */
 	animation-name: nav-animation;
-	animation-duration: 1000ms;
+	animation-duration: 2200ms;
 }
 .store {
-	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 1300ms; /* Safari 4.0 - 8.0 */
-	animation-name: nav-animation;
-	animation-duration: 1300ms;
-
-}
-.podcast {
 	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
 	-webkit-animation-duration: 1600ms; /* Safari 4.0 - 8.0 */
 	animation-name: nav-animation;
 	animation-duration: 1600ms;
 
 }
+.podcast {
+	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1000ms; /* Safari 4.0 - 8.0 */
+	animation-name: nav-animation;
+	animation-duration: 1000ms;
+
+}
+
 .patreon{
 	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 1900ms; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1000ms; /* Safari 4.0 - 8.0 */
 	animation-name: nav-animation;
-	animation-duration: 1900ms;
+	animation-duration: 1000ms;
 }
 .about{
+	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1600ms; /* Safari 4.0 - 8.0 */
+	animation-name: nav-animation;
+	animation-duration: 1600ms;
+}
+.contact{
 	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
 	-webkit-animation-duration: 2200ms; /* Safari 4.0 - 8.0 */
 	animation-name: nav-animation;
 	animation-duration: 2200ms;
 }
-.contact{
-	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 2500ms; /* Safari 4.0 - 8.0 */
-	animation-name: nav-animation;
-	animation-duration: 2500ms;
-}
 
 .content-main {
-    background:rgba(0,0,0,0.3);
-    border-left: 1px solid grey ;
-    border-right: 1px solid grey ;
+    background:rgba(0,0,0,0.2);
+    /*border-left: 1px solid grey ;*/
+    /*border-right: 1px solid grey ;*/
 }
 
 .container-main{
@@ -121,6 +123,39 @@ a:hover {
 	height: 125px;
 }
 
+.dropdown {
+    display: block;
+}
+.dropdown-content {
+    padding-bottom: 0;
+    font-size: 15px;
+    padding-top: 10px;
+    display: none;
+    position: relative;
+    background: rgba(0,0,0,0.7);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    position: relative;
+    display: block;
+}
+
+.parallax {
+    /* The image used */
+    background: url("../img/parallax/bs-youtube-function.jpg");
+
+    /* Set a specific height */
+    min-height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 footer {
     background: grey;
     height: 120px;
@@ -139,13 +174,14 @@ i:hover{
     text-shadow: 7px 5px 5px dimgray;
 }
 
+
 /*animations*/
 
 @keyframes logo-animation {
 	from {
 		opacity: 0;
-		position: absolute;
-		top: 35px;
+		position: relative;
+		top: 30px;
 
 	}
 	to {
@@ -169,38 +205,3 @@ i:hover{
 	}
 }
 
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-
-.dropdown-content {
-	padding-bottom: 5px;
-	font-size: 15px;
-	padding-top: 10px;
-	display: none;
-	position: relative;
-	background: rgba(0,0,0,0.4);
-	min-width: 160px;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-	z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-	position: relative;
-	display: block;
-}
-
-.parallax {
-	/* The image used */
-	background: url("../img/parallax/bs-youtube-function.jpg");
-
-	/* Set a specific height */
-	min-height: 100%;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
