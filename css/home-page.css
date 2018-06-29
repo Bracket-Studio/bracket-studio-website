@@ -1,3 +1,15 @@
+:root {
+	--red: #c0392b;
+	--light-red: #e74c3c;
+	--white: #f5f6fa;
+	--light-grey: #718093;
+	--grey: #b2bec3;
+	--dark-grey: #485460;
+	--black: #1e272e;
+
+
+}
+
 body, html {
 	margin-left: 0;
 	background: #202125;
@@ -5,7 +17,7 @@ body, html {
 
 a:hover {
     /*font-size: 21px;*/
-	color: #fafafa;
+	color: var(--white);
 }
 
 .body-container{
@@ -20,13 +32,13 @@ a:hover {
     z-index: 10;
 	width: 100%;
 	background-size: auto;
-	background:rgba(20,21,24,.2);
+	background: var(--black);
+	/*background:rgba(20,21,24,.2);*/
 	/*box-shadow: 0 8px 25px red;*/
     /*border-top: 1px solid white;*/
-	border-bottom: 3px solid white;
+	border-bottom: 3px solid var(--white);
 }
 .nav-logo {
-    text-shadow: black 4px 5px 3px; ;
     align-content: center;
 	position: relative;
 	top: 5px;
@@ -48,7 +60,7 @@ a:hover {
 }
 .nav-link {
     text-align: center;
-	color: grey;
+	color: var(--light-grey);
 	text-shadow: black 4px 5px 3px;
 }
 .nav-item {
@@ -101,20 +113,23 @@ a:hover {
 }
 
 .content-main {
-    background:rgba(40,40,40,0.2);
+	background: var(--dark-grey);
+    /*background:rgba(40,40,40,0.2);*/
     /*border-left: 1px solid grey ;*/
     /*border-right: 1px solid grey ;*/
 }
 .container-main{
+	box-shadow: 10px 8px 25px red;
     height: 850px;
 	width: 100%;
 }
 .side-panel{
-    background:rgba(40,40,40,0.2);
+	background: var(--dark-grey);
+    /*background:rgba(40,40,40,0.2);*/
 }
 
 .fab{
-    color: #202125;
+    color: var(--dark-grey);
 }
 .social-media-links{
     padding-top: 10px;
@@ -152,6 +167,7 @@ a:hover {
 }
 
 .parallax {
+	box-shadow: 10px 8px 25px red;
     /* The image used */
     /*background: url("../img/parallax/bs-youtube-function.jpg");*/
 
@@ -166,7 +182,7 @@ a:hover {
 }
 
 footer {
-    background: grey;
+    background: var(--grey);
     height: 120px;
 }
 
@@ -179,8 +195,8 @@ i {
 }
 i:hover{
     font-weight: lighter;
-    color: white;
-    text-shadow: 7px 5px 5px dimgray;
+    color: var(--white);
+    text-shadow: 7px 5px 5px black;
 }
 
 
