@@ -169,7 +169,7 @@ a:hover {
 .parallax {
 	/*box-shadow: 10px 8px 25px red;*/
     /* The image used */
-    background: url("../../img/backgrounds/coastline.jpg");
+    background: url("../img/backgrounds/coastline.jpg");
 
     /* Set a specific height */
     min-height: 100%;
@@ -183,7 +183,7 @@ a:hover {
 .parallax-2 {
 	/*box-shadow: 10px 8px 25px red;*/
 	/* The image used */
-	background: url("../../img/backgrounds/coastline-night.jpg");
+	background: url("../img/backgrounds/coastline-night.jpg");
 
 	/* Set a specific height */
 	min-height: 100%;
