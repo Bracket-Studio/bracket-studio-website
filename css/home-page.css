@@ -64,7 +64,7 @@ a:hover {
     -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
     animation-name: logo-animation;
     animation-duration: .5s;
-    transition: 5s ease;
+    transition: 500ms ease;
 
 }
 
@@ -76,6 +76,7 @@ a:hover {
     border: transparent;
     width: 100%;
     height: 120px;
+    transition: 500ms;
 
 }
 
@@ -359,7 +360,8 @@ i:hover {
     transition: 500ms;
 }
 .scrolled .nav-logo {
-    display: none;
+    height: 0;
+    transition: 500ms;
 }
 
 /*TESTING TESTING TESTING*/
