@@ -371,5 +371,11 @@ i:hover {
 #invis-scroll {
     opacity: 1;
 }
-
+#backToTop {
+    display: none;
+}
+#backToTop i{
+    color: white;
+    font-size: 40px;
+}
 /*TESTING TESTING TESTING*/
