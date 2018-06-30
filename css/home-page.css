@@ -18,6 +18,11 @@
     /*Amatic SC*/
 }
 
+@font-face {
+    font-family: patreon;
+    src: url("../fonts/gt-america-standard-regular");
+}
+
 body, html {
     margin-left: 0;
     background: #202125;
@@ -26,6 +31,7 @@ body, html {
 a:hover {
     /*font-size: 21px;*/
     color: var(--white);
+    transition: .35s;
 }
 
 .body-container {
@@ -40,7 +46,7 @@ a:hover {
     position: fixed;
     z-index: 10;
     width: 100%;
-    background-size: auto;
+    /*background-size: auto;*/
     background: var(--black);
     /*background:rgba(20,21,24,.2);*/
     box-shadow: 0 8px 25px var(--black);
@@ -51,23 +57,26 @@ a:hover {
 .nav-logo {
     align-content: center;
     position: relative;
-    top: 5px;
+    top: 0;
     margin: 0;
     height: 110px;
     -webkit-animation-name: logo-animation; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
     animation-name: logo-animation;
-    animation-duration: 1s;
+    animation-duration: .5s;
+    transition: 5s ease;
+
 }
 
 .nav {
     text-align: center;
-    padding: 0;
+    padding: auto;
     list-style: none;
     background: transparent;
     border: transparent;
     width: 100%;
     height: 120px;
+
 }
 
 .nav-link {
@@ -83,6 +92,7 @@ a:hover {
     font-weight: bolder;
     font-size: 20px;
     padding-top: 37px;
+    transition: 500ms;
 }
 
 .discord {
@@ -90,6 +100,7 @@ a:hover {
     -webkit-animation-duration: 2200ms; /* Safari 4.0 - 8.0 */
     animation-name: nav-animation;
     animation-duration: 2200ms;
+    transition: 1s ease;
 }
 
 .store {
@@ -97,7 +108,7 @@ a:hover {
     -webkit-animation-duration: 1600ms; /* Safari 4.0 - 8.0 */
     animation-name: nav-animation;
     animation-duration: 1600ms;
-
+    transition: 1s ease;
 }
 
 .podcast {
@@ -105,7 +116,7 @@ a:hover {
     -webkit-animation-duration: 1000ms; /* Safari 4.0 - 8.0 */
     animation-name: nav-animation;
     animation-duration: 1000ms;
-
+    transition: 1s ease;
 }
 
 .patreon {
@@ -113,6 +124,7 @@ a:hover {
     -webkit-animation-duration: 1000ms; /* Safari 4.0 - 8.0 */
     animation-name: nav-animation;
     animation-duration: 1000ms;
+    transition: 1s ease;
 }
 
 .about {
@@ -120,6 +132,7 @@ a:hover {
     -webkit-animation-duration: 1600ms; /* Safari 4.0 - 8.0 */
     animation-name: nav-animation;
     animation-duration: 1600ms;
+    transition: 1s ease;
 }
 
 .contact {
@@ -127,6 +140,7 @@ a:hover {
     -webkit-animation-duration: 2200ms; /* Safari 4.0 - 8.0 */
     animation-name: nav-animation;
     animation-duration: 2200ms;
+    transition: 1s ease;
 }
 
 .content-main {
@@ -190,7 +204,7 @@ a:hover {
     display: block;
 }
 
-.parallax {
+.parallax-1 {
     /*box-shadow: 10px 8px 25px red;*/
     /* The image used */
     background: url("../img/backgrounds/coastline.jpg");
@@ -206,10 +220,24 @@ a:hover {
 }
 
 .parallax-2 {
-    z-index: 5;
-    box-shadow: 10px 8px 25px red;
+    z-index: 0;
     /* The image used */
     background: url("../img/backgrounds/coastline-night.jpg");
+
+    /* Set a specific height */
+    min-height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-3 {
+    /*box-shadow: 10px 8px 25px red;*/
+    /* The image used */
+    background: url("../img/backgrounds/coastline.jpg");
 
     /* Set a specific height */
     min-height: 100%;
@@ -237,7 +265,23 @@ a:hover {
 .discord-header {
     border-radius: 30px;
     /*box-shadow: white 4px 5px 3px;*/
-    height: 120px;
+    height: 100px;
+}
+
+.patreon-title-bar {
+    text-shadow: black 4px 5px 3px;
+    font-size: 95px;
+    text-align: center;
+    border-top: 5px solid #052D49;
+    border-bottom: 5px solid #052D49;
+    background: #F96854;
+    height: 180px;
+}
+
+.patreon-header {
+    margin: 0;
+    /*box-shadow: white 4px 5px 3px;*/
+    height: 135px;
 }
 
 footer {
@@ -265,13 +309,14 @@ i:hover {
     from {
         opacity: 0;
         position: relative;
-        top: 20px;
+        top: 15px;
+
 
     }
     to {
         opacity: 1;
         position: relative;
-        top: 5px;
+        top: 0;
     }
 }
 
@@ -291,27 +336,30 @@ i:hover {
 }
 
 .scrolled {
-    transition: 1s ease;
-    height: 65px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--dark-grey);
 }
 
 .scrolled header {
-    transition: 1s ease;
+    transition: 500ms ease;
 }
 
-.scrolled .navbar {
-    transition: 1s ease;
+.scrolled .nav {
+    top: 5px;
+    height: 45px;
+    transition: 500ms;
 }
 
 .scrolled a {
-    color: white;
+    color: var(--white);
     transition: 1s ease;
 }
-
+.scrolled .nav-item{
+    padding: 0;
+    margin: 0;
+    transition: 500ms;
+}
 .scrolled .nav-logo {
-    top: 0;
-    transition: 1s ease;
+    display: none;
 }
 
 /*TESTING TESTING TESTING*/
