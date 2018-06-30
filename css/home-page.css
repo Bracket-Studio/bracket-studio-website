@@ -20,7 +20,6 @@
 
 @font-face {
     font-family: patreon;
-    src: url("../fonts/gt-america-standard-regular");
 }
 
 body, html {
@@ -64,7 +63,9 @@ a:hover {
     -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
     animation-name: logo-animation;
     animation-duration: .5s;
+    opacity: 1.0;
     transition: 500ms ease;
+
 
 }
 
@@ -362,6 +363,13 @@ i:hover {
 .scrolled .nav-logo {
     height: 0;
     transition: 500ms;
+}
+.scrolled #invis-scroll{
+    opacity: 0.0;
+    transition: opacity 500ms;
+}
+#invis-scroll {
+    opacity: 1;
 }
 
 /*TESTING TESTING TESTING*/
