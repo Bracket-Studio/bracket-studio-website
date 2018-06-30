@@ -1,11 +1,14 @@
 :root {
 	--red: #c0392b;
 	--light-red: #e74c3c;
+	--blue: #2980b9;
+	--light-blue: #3498db;
 	--white: #f5f6fa;
-	--light-grey: #718093;
+	--light-grey: #99AAB5;
 	--grey: #b2bec3;
 	--dark-grey: #485460;
-	--black: #1e272e;
+	--black: #23272A;
+
 
 	/*Rock Salt*/
 	/*Saira Extra Condensed*/
@@ -42,7 +45,7 @@ a:hover {
 	background-size: auto;
 	background: var(--black);
 	/*background:rgba(20,21,24,.2);*/
-	/*box-shadow: 0 8px 25px red;*/
+	box-shadow: 0 8px 25px var(--black);
     /*border-top: 1px solid white;*/
 	border-bottom: 3px solid var(--white);
 }
@@ -189,7 +192,8 @@ a:hover {
     background-size: cover;
 }
 .parallax-2 {
-	/*box-shadow: 10px 8px 25px red;*/
+	z-index: 5;
+	box-shadow: 10px 8px 25px red;
 	/* The image used */
 	background: url("../img/backgrounds/coastline-night.jpg");
 
@@ -203,15 +207,26 @@ a:hover {
 	background-size: cover;
 }
 
-.podcast-title-bar {
-	border-bottom: 3px solid var(--white);
+.discord-title-bar {
 	color: var(--white);
-	background: var(--black);
+	text-shadow: black 4px 5px 3px;
+	font-family:Julius Sans One;
+	font-size: 100px;
+	padding-top: 13px;
+	text-align: center;
+	border-top: 5px solid #7289DA;
+	border-bottom: 5px solid #7289DA;
+	background: #23272A;
 	height: 180px;
+}
+.discord-header{
+	border-radius: 30px;
+	/*box-shadow: white 4px 5px 3px;*/
+	height: 120px;
 }
 
 footer {
-    background: var(--grey);
+    background: var(--light-grey);
     height: 120px;
 }
 
