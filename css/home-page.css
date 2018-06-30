@@ -1,37 +1,34 @@
 :root {
-	--red: #c0392b;
-	--light-red: #e74c3c;
-	--blue: #2980b9;
-	--light-blue: #3498db;
-	--white: #f5f6fa;
-	--light-grey: #99AAB5;
-	--grey: #b2bec3;
-	--dark-grey: #485460;
-	--black: #23272A;
+    --red: #c0392b;
+    --light-red: #e74c3c;
+    --blue: #2980b9;
+    --light-blue: #3498db;
+    --white: #f5f6fa;
+    --light-grey: #99AAB5;
+    --grey: #b2bec3;
+    --dark-grey: #485460;
+    --black: #23272A;
 
-
-	/*Rock Salt*/
-	/*Saira Extra Condensed*/
-	/*Permanent Marker*/
-	/*Architects Daughter*/
-	/*Just Another Hands*/
-	/*Julius Sans One*/
-	/*Amatic SC*/
+    /*Rock Salt*/
+    /*Saira Extra Condensed*/
+    /*Permanent Marker*/
+    /*Architects Daughter*/
+    /*Just Another Hands*/
+    /*Julius Sans One*/
+    /*Amatic SC*/
 }
 
 body, html {
-	margin-left: 0;
-	background: #202125;
+    margin-left: 0;
+    background: #202125;
 }
-
-
 
 a:hover {
     /*font-size: 21px;*/
-	color: var(--white);
+    color: var(--white);
 }
 
-.body-container{
+.body-container {
     box-shadow: 0 8px 25px black;
 }
 
@@ -40,145 +37,161 @@ a:hover {
 }
 
 .navbar {
+    position: fixed;
     z-index: 10;
-	width: 100%;
-	background-size: auto;
-	background: var(--black);
-	/*background:rgba(20,21,24,.2);*/
-	box-shadow: 0 8px 25px var(--black);
+    width: 100%;
+    background-size: auto;
+    background: var(--black);
+    /*background:rgba(20,21,24,.2);*/
+    box-shadow: 0 8px 25px var(--black);
     /*border-top: 1px solid white;*/
-	border-bottom: 3px solid var(--white);
+    border-bottom: 3px solid var(--white);
 }
+
 .nav-logo {
     align-content: center;
-	position: relative;
-	top: 5px;
-	margin: 0;
-	height: 110px;
-	-webkit-animation-name: logo-animation; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-	animation-name: logo-animation;
-	animation-duration: 1s;
+    position: relative;
+    top: 5px;
+    margin: 0;
+    height: 110px;
+    -webkit-animation-name: logo-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: logo-animation;
+    animation-duration: 1s;
 }
+
 .nav {
     text-align: center;
-	padding: 0;
-	list-style: none;
-	background: transparent;
-	border: transparent;
-	width: 100%;
-	height: 120px;
+    padding: 0;
+    list-style: none;
+    background: transparent;
+    border: transparent;
+    width: 100%;
+    height: 120px;
 }
+
 .nav-link {
     text-align: center;
-	color: var(--light-grey);
-	text-shadow: black 4px 5px 3px;
+    color: var(--light-grey);
+    text-shadow: black 4px 5px 3px;
 }
+
 .nav-item {
     position: relative;
-	text-align: center;
-	font-family: 'Julius Sans One' ;
-	font-weight: bolder;
-	font-size: 20px;
-	padding-top: 37px;
+    text-align: center;
+    font-family: 'Julius Sans One';
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 37px;
 }
 
 .discord {
-	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 2200ms; /* Safari 4.0 - 8.0 */
-	animation-name: nav-animation;
-	animation-duration: 2200ms;
+    -webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2200ms; /* Safari 4.0 - 8.0 */
+    animation-name: nav-animation;
+    animation-duration: 2200ms;
 }
+
 .store {
-	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 1600ms; /* Safari 4.0 - 8.0 */
-	animation-name: nav-animation;
-	animation-duration: 1600ms;
+    -webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1600ms; /* Safari 4.0 - 8.0 */
+    animation-name: nav-animation;
+    animation-duration: 1600ms;
 
 }
+
 .podcast {
-	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 1000ms; /* Safari 4.0 - 8.0 */
-	animation-name: nav-animation;
-	animation-duration: 1000ms;
+    -webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1000ms; /* Safari 4.0 - 8.0 */
+    animation-name: nav-animation;
+    animation-duration: 1000ms;
 
 }
 
-.patreon{
-	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 1000ms; /* Safari 4.0 - 8.0 */
-	animation-name: nav-animation;
-	animation-duration: 1000ms;
+.patreon {
+    -webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1000ms; /* Safari 4.0 - 8.0 */
+    animation-name: nav-animation;
+    animation-duration: 1000ms;
 }
-.about{
-	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 1600ms; /* Safari 4.0 - 8.0 */
-	animation-name: nav-animation;
-	animation-duration: 1600ms;
+
+.about {
+    -webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1600ms; /* Safari 4.0 - 8.0 */
+    animation-name: nav-animation;
+    animation-duration: 1600ms;
 }
-.contact{
-	-webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 2200ms; /* Safari 4.0 - 8.0 */
-	animation-name: nav-animation;
-	animation-duration: 2200ms;
+
+.contact {
+    -webkit-animation-name: nav-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2200ms; /* Safari 4.0 - 8.0 */
+    animation-name: nav-animation;
+    animation-duration: 2200ms;
 }
 
 .content-main {
-	/*background: var(--dark-grey);*/
+    /*background: var(--dark-grey);*/
     /*background:rgba(0,0,0,0.4);*/
     /*border-left: 1px solid grey ;*/
     /*border-right: 1px solid grey ;*/
 }
-.container-main{
-	/*box-shadow: 10px 8px 25px red;*/
+
+.container-main {
+    /*box-shadow: 10px 8px 25px red;*/
     height: 850px;
-	width: 100%;
+    width: 100%;
 }
-.side-panel{
-	/*background: var(--dark-grey);*/
+
+.side-panel {
+    /*background: var(--dark-grey);*/
     /*background:rgba(0,0,0,0.2);*/
 }
 
-.fab{
+.fab {
     color: var(--black);
 }
-.social-media-links{
+
+.social-media-links {
     padding-top: 10px;
 }
 
 .avatar-list {
-	list-style: none;
-	/*padding: 0;*/
-	margin-left: 30px;
+    list-style: none;
+    /*padding: 0;*/
+    margin-left: 30px;
 }
+
 .avatar-item {
-	padding-top: 30px;
+    padding-top: 30px;
 }
+
 .avatar {
-	height: 125px;
+    height: 125px;
 }
 
 .dropdown {
     display: block;
 }
+
 .dropdown-content {
     padding-bottom: 0;
     font-size: 15px;
     padding-top: 10px;
     display: none;
     position: relative;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
+
 .dropdown:hover .dropdown-content {
     position: relative;
     display: block;
 }
 
 .parallax {
-	/*box-shadow: 10px 8px 25px red;*/
+    /*box-shadow: 10px 8px 25px red;*/
     /* The image used */
     background: url("../img/backgrounds/coastline.jpg");
 
@@ -191,38 +204,40 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .parallax-2 {
-	z-index: 5;
-	box-shadow: 10px 8px 25px red;
-	/* The image used */
-	background: url("../img/backgrounds/coastline-night.jpg");
+    z-index: 5;
+    box-shadow: 10px 8px 25px red;
+    /* The image used */
+    background: url("../img/backgrounds/coastline-night.jpg");
 
-	/* Set a specific height */
-	min-height: 100%;
+    /* Set a specific height */
+    min-height: 100%;
 
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .discord-title-bar {
-	color: var(--white);
-	text-shadow: black 4px 5px 3px;
-	font-family:Julius Sans One;
-	font-size: 100px;
-	padding-top: 13px;
-	text-align: center;
-	border-top: 5px solid #7289DA;
-	border-bottom: 5px solid #7289DA;
-	background: #23272A;
-	height: 180px;
+    color: var(--white);
+    text-shadow: black 4px 5px 3px;
+    font-family: Julius Sans One;
+    font-size: 100px;
+    padding-top: 13px;
+    text-align: center;
+    border-top: 5px solid #7289DA;
+    border-bottom: 5px solid #7289DA;
+    background: #23272A;
+    height: 180px;
 }
-.discord-header{
-	border-radius: 30px;
-	/*box-shadow: white 4px 5px 3px;*/
-	height: 120px;
+
+.discord-header {
+    border-radius: 30px;
+    /*box-shadow: white 4px 5px 3px;*/
+    height: 120px;
 }
 
 footer {
@@ -237,42 +252,66 @@ i {
     text-align: center;
     font-size: 80px;
 }
-i:hover{
+
+i:hover {
     font-weight: lighter;
     color: var(--white);
     text-shadow: 7px 5px 5px black;
 }
 
-
 /*animations*/
 
 @keyframes logo-animation {
-	from {
-		opacity: 0;
-		position: relative;
-		top: 20px;
+    from {
+        opacity: 0;
+        position: relative;
+        top: 20px;
 
-	}
-	to {
-		opacity: 1;
-		position: relative;
-		top: 5px;
-	}
+    }
+    to {
+        opacity: 1;
+        position: relative;
+        top: 5px;
+    }
 }
+
 @keyframes nav-animation {
-	from {
-		opacity: 0;
-		/*position: absolute;*/
-		/*top: 100px;*/
+    from {
+        opacity: 0;
+        /*position: absolute;*/
+        /*top: 100px;*/
 
-	}
-	to {
-		opacity: 1;
-		/*position: relative;*/
-		/*top: 5px;*/
-	/*}*/
-	}
+    }
+    to {
+        opacity: 1;
+        /*position: relative;*/
+        /*top: 5px;*/
+        /*}*/
+    }
 }
 
+.scrolled {
+    transition: 1s ease;
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.scrolled header {
+    transition: 1s ease;
+}
+
+.scrolled .navbar {
+    transition: 1s ease;
+}
+
+.scrolled a {
+    color: white;
+    transition: 1s ease;
+}
+
+.scrolled .nav-logo {
+    top: 0;
+    transition: 1s ease;
+}
 
 /*TESTING TESTING TESTING*/

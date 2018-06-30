@@ -15,3 +15,15 @@ $(document).keyup(function(event){
     window.addEventListener("keyup", konamiCode);
     console.log(event.keyCode);
 });
+
+
+// this functionality makes the navbar stick to the top and shorten just a bit though a special class
+$(document).ready(function() {
+    $(window).on('scroll', function() {
+        if (Math.round($(window).scrollTop()) > 100) {
+            $('.navbar').addClass('scrolled');
+        } else {
+            $('.navbar').removeClass('scrolled');
+        }
+    });
+});
