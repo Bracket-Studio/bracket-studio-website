@@ -366,7 +366,7 @@ i:hover {
 }
 .scrolled #invis-scroll{
     opacity: 0.0;
-    transition: opacity 500ms;
+    transition: opacity 0ms;
 }
 #invis-scroll {
     opacity: 1;
