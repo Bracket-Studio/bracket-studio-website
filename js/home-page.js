@@ -19,11 +19,11 @@ $(document).keyup(function (event) {
 
 function switchALinks(isScrolled) {
     if (isScrolled) {
-        $('#invis-scroll').css('display', 'none');
-        $('#backToTop').css('display', 'inline');
+        $('#invis-scroll').slideUp(300).css('display', 'none');
+        $('#backToTop').slideDown(300).css('display', 'inline');
     } else {
-        $('#invis-scroll').css('display', 'inline');
-        $('#backToTop').css('display', 'none');
+        $('#invis-scroll').slideDown(300).css('display', 'inline');
+        $('#backToTop').slideUp(300).css('display', 'none');
     }
 }
 
