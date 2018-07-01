@@ -19,18 +19,26 @@ $(document).keyup(function (event) {
 
 function switchALinks(isScrolled) {
     if (isScrolled) {
-        $('#invis-scroll').slideUp(300).css('display', 'none');
-        $('#backToTop').slideDown(300).css('display', 'inline');
+        setTimeout(function () {
+            $('#invis-scroll').css('display', 'none')
+        }, 800);
+        setTimeout(function () {
+            $('#backToTop').css('display', 'inline')
+        }, 800);
     } else {
-        $('#invis-scroll').slideDown(300).css('display', 'inline');
-        $('#backToTop').slideUp(300).css('display', 'none');
+        setTimeout(function () {
+            $('#invis-scroll').css('display', 'inline')
+        }, 800);
+        setTimeout(function () {
+            $('#backToTop').css('display', 'none')
+        }, 800);
     }
 }
 
 // this functionality makes the navbar stick to the top and shorten just a bit though a special class
 $(document).ready(function () {
     $(window).on('scroll', function () {
-        if (Math.round($(window).scrollTop()) > 100) {
+        if (Math.round($(window).scrollTop()) >= 100) {
             $('.navbar').addClass('scrolled');
             switchALinks(true);
         } else {
