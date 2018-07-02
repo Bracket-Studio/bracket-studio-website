@@ -376,6 +376,7 @@ i:hover {
 }
 
 .scrolled {
+    opacity: 0.5;
     background-color: var(--dark-grey);
 }
 
@@ -425,4 +426,5 @@ header {
     color: white;
     font-size: 30px;
 }
+
 /*TESTING TESTING TESTING*/

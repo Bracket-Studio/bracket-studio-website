@@ -21,17 +21,17 @@ function switchALinks(isScrolled) {
     if (isScrolled) {
         setTimeout(function () {
             $('#invis-scroll').css('display', 'none')
-        }, 800);
+        }, 450);
         setTimeout(function () {
             $('#backToTop').css('display', 'inline')
-        }, 800);
+        }, 450);
     } else {
         setTimeout(function () {
             $('#invis-scroll').css('display', 'inline')
-        }, 800);
+        }, 450);
         setTimeout(function () {
             $('#backToTop').css('display', 'none')
-        }, 800);
+        }, 450);
     }
 }
 
