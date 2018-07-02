@@ -1,7 +1,6 @@
 :root {
-    --bs-red: #E11936;
-    --red: #c0392b;
-    --light-red: #e74c3c;
+    --bs-red: #F63B58;
+    --bs-white: #DEE6E9;
     --blue: #2980b9;
     --light-blue: #3498db;
     --white: #f5f6fa;
@@ -39,6 +38,7 @@ h2 {
     font-size: 50px;
     font-family: "Julius Sans One";
 }
+
 .nav-item a:hover {
     letter-spacing: 5px;
     color: var(--white);
@@ -334,7 +334,7 @@ h2 {
 
 .podcast-title-bar {
     padding: 65px ;
-    color: var(--white);
+    color: var(--bs-white);
     font-family: "Sin City";
     /*text-shadow: black 4px 5px 3px;*/
     font-size: 45px;
