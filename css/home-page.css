@@ -21,17 +21,32 @@
 
 @font-face {
     font-family: Sin City;
-    src: url('../fonts/Sin-City.ttf'); }
+    src: url('../fonts/Sin-City.ttf');
+}
+
+@font-face {
+    font-family: June;
+    src: url("../fonts/Megan-June.otf");
+}
 
 body, html {
     margin-left: 0;
     background: #202125;
 }
 
-a:hover {
-    /*font-size: 21px;*/
+h2 {
+    letter-spacing: 30px;
+    font-size: 50px;
+    font-family: "Julius Sans One";
+}
+.nav-item a:hover {
+    letter-spacing: 5px;
     color: var(--white);
     transition: .35s;
+}
+
+.dropdown-content a:hover {
+    letter-spacing: 0;
 }
 
 .body-container {
@@ -97,10 +112,12 @@ a:hover {
 }
 
 .text-box {
+    border-radius: 20px;
     padding: 50px 100px;
     text-align: center;
     color: var(--white);
-    font-family: "Julius Sans One";
+    font-family: "June";
+    font-size: 25px;
     background: rgba(48,54,60,0.6);
     margin-top: 220px;
 }
@@ -172,7 +189,8 @@ a:hover {
 }
 
 .fab {
-    color: var(--black);
+    margin: 10px 20px;
+    color: var(--dark-grey);
 }
 
 .social-media-links {
@@ -340,16 +358,14 @@ footer {
 }
 
 i {
-
-    color: #202124;
     margin: 10px;
     text-align: center;
     font-size: 80px;
 }
 
 i:hover {
-    color: var(--white);
-    text-shadow: 4px 5px 5px black;
+    color: var(--black);
+    /*text-shadow: 4px 5px 5px black;*/
 }
 
 /*animations*/
