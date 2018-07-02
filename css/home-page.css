@@ -49,9 +49,9 @@ a:hover {
     /*background-size: auto;*/
     background: var(--black);
     /*background:rgba(20,21,24,.2);*/
-    box-shadow: 0 8px 25px var(--black);
+    /*box-shadow: 0 8px 25px var(--black);*/
     /*border-top: 1px solid white;*/
-    border-bottom: 3px solid var(--white);
+    /*border-bottom: 3px solid var(--light-grey);*/
 }
 
 .nav-logo {
@@ -83,7 +83,7 @@ a:hover {
 .nav-link {
     text-align: center;
     color: var(--light-grey);
-    text-shadow: black 4px 5px 3px;
+    /*text-shadow: black 4px 5px 3px;*/
 }
 
 .nav-item {
@@ -94,6 +94,15 @@ a:hover {
     font-size: 20px;
     padding-top: 37px;
     transition: 500ms;
+}
+
+.text-box {
+    padding: 50px 100px;
+    text-align: center;
+    color: var(--white);
+    font-family: "Julius Sans One";
+    background: rgba(48,54,60,0.6);
+    margin-top: 220px;
 }
 
 .discord {
@@ -276,7 +285,6 @@ a:hover {
     color: var(--white);
     text-shadow: black 4px 5px 3px;
     font-size: 100px;
-    padding-top: 13px;
     text-align: center;
     border-bottom: 5px solid #7289DA;
     background: #23272A;
@@ -284,12 +292,14 @@ a:hover {
 }
 
 .discord-header {
+    top: 10px;
     border-radius: 30px;
     /*box-shadow: white 4px 5px 3px;*/
     height: 100px;
 }
 
 .patreon-title-bar {
+    padding-top: 5px;
     text-shadow: black 4px 5px 3px;
     font-size: 95px;
     text-align: center;
@@ -305,11 +315,11 @@ a:hover {
 }
 
 .podcast-title-bar {
-    padding: 55px ;
+    padding: 65px ;
     color: var(--white);
     font-family: "Sin City";
     /*text-shadow: black 4px 5px 3px;*/
-    font-size: 60px;
+    font-size: 45px;
     text-align: center;
     border-bottom: 5px solid var(--black);
     background: var(--bs-red);
@@ -376,7 +386,6 @@ i:hover {
 }
 
 .scrolled {
-    opacity: 0.5;
     background-color: var(--dark-grey);
 }
 
@@ -413,7 +422,7 @@ header {
 }
 .scrolled #invis-scroll{
     opacity: 0.0;
-    transition: opacity 1s;
+    transition:  0s;
 }
 #invis-scroll {
     opacity: 1;
