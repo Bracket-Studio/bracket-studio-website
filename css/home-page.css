@@ -74,7 +74,8 @@ h2 {
     position: relative;
     top: 0;
     margin: 0;
-    height: 110px;
+    padding: 10px;
+    height: 100px;
     -webkit-animation-name: logo-animation; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
     animation-name: logo-animation;
