@@ -23,11 +23,11 @@ function switchALinks(isScrolled) {
             $('#invis-scroll').css('display', 'none')
         }, 450);
         setTimeout(function () {
-            $('#backToTop').css('display', 'inline')
+            $('#backToTop').css('display', 'block')
         }, 450);
     } else {
         setTimeout(function () {
-            $('#invis-scroll').css('display', 'inline')
+            $('#invis-scroll').css('display', 'block')
         }, 450);
         setTimeout(function () {
             $('#backToTop').css('display', 'none')
@@ -47,3 +47,13 @@ $(document).ready(function () {
         }
     });
 });
+
+// smooth scrolling
+
+    setTimeout(function() {
+        $('nav-logo').addClass('.rotation-1');
+        $('#nav-logo').removeClass('.nav-logo')
+    }, 3000);
+
+
+
